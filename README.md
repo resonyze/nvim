@@ -1,3 +1,3 @@
 # nvim
 
-This was not an easy to setup.
+This was not easy to setup.
