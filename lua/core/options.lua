@@ -48,6 +48,11 @@ vim.o.timeoutlen = 300
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+-- Show invisible characters like space and newline
 vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
+-- vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "eol:↵"
+
+vim.o.cursorline = false
+
+vim.o.equalalways = false

@@ -7,7 +7,7 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
-      "hrsh7th/cmp-nvim-lsp-signature-help",
+      -- "hrsh7th/cmp-nvim-lsp-signature-help",
       "saadparwaiz1/cmp_luasnip",
       "onsails/lspkind.nvim",
     },
@@ -32,7 +32,7 @@ return {
           ["<C-b>"] = cmp.mapping.scroll_docs(-4),
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
           ["<C-Space>"] = cmp.mapping.complete(),
-          ["<C-e>"] = cmp.mapping.abort(),
+          -- ["<C-e>"] = cmp.mapping.abort(),
           ["<C-y>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
           ["<C-Y>"] = cmp.mapping.confirm({
             behavior = cmp.ConfirmBehavior.Replace,
@@ -41,7 +41,7 @@ return {
         }),
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
-          { name = 'nvim_lsp_signature_help' },
+          -- { name = 'nvim_lsp_signature_help' },
           { name = "luasnip" },
           { name = "buffer" },
           { name = "path" },
@@ -61,7 +61,7 @@ return {
             ellipsis_char = "...", -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
             menu = {
               nvim_lsp = "[LSP]",
-              nvim_lsp_signature_help = "[SIG]",
+              -- nvim_lsp_signature_help = "[SIG]",
               luasnip = "[snip]",
               buffer = "[buf]",
               path = "[path]",
